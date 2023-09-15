@@ -1,0 +1,31 @@
+.fourth_class {
+    color: #222;
+    font-family: Gilroy;
+    font-size: 16.653px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center; 
+    margin-top: 35px; 
+}
+
+
+.fourth_captain {
+    color: #222;
+    font-family: Gilroy;
+    font-size: 16.653px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+
+.fourth_text {
+    color: #73738D;
+    font-family: Gilroy;
+    font-size: 11.089px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
