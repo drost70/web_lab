@@ -1,0 +1,50 @@
+.grid-container-one {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  padding-top: 16.88px;
+}
+
+.grid-container-two {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  padding-top: 16.88px;
+  width: 336px;
+  height: 62px;
+}
+
+.grid-item {
+  align-items: center;
+  color: #73738D;
+  font-size: 11.09px;
+  font-weight: 500;
+}
+
+.checkmark {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-item {
+    font-size: 10px;
+  }
+
+  .grid-container-one {
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+  }
+
+  .grid-container-two {
+    margin: 0 auto;
+    padding-top: 0px;
+    display: inline;
+    text-align: center;
+  }
+
+  .grid-not {
+    margin-bottom: 10px;
+  }
+
+}

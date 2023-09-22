@@ -1,0 +1,15 @@
+@import "./normalize.min.css";
+
+@import "./globals.css";
+
+@import "./hero.css";
+
+@import "./header.css";
+
+@import "./notifications.css";
+
+@import "./points_checkmarks.css";
+
+@import "./custboxes.css";
+
+@import "./footer.css";

@@ -1,0 +1,58 @@
+.container__photo-Surbhi,
+.container__photo-Ripal,
+.container__photo-Prashasti {
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 17px;
+  width: 379.79px;
+  height: 66.53px;
+  box-shadow: 0px 13.861111640930176px 55.4444465637207px 0px #F2F5FA;
+  align-items: center;
+  margin-top: 16.63px;
+  transition: transform 0.7s; 
+}
+
+.container__photo-Surbhi:hover,
+.container__photo-Ripal:hover,
+.container__photo-Prashasti:hover {
+  transform: translateY(-7px); 
+}
+
+.content {
+  font-size: 11.09px;
+  font-weight: 600;
+  line-height: 16.63px;
+  color: #222222CC;
+  display: flex;
+}
+
+.circle-photo {
+  width: 33.27px;
+  height: 33.27px;
+  margin-right: 8.32px;
+}
+
+.bold__text {
+  font-weight: bolder;
+  color: #222222;
+}
+
+.green__text {
+  color: #26C296;
+}
+
+@media screen and (max-width: 768px) {
+  .container__photo-Surbhi,
+  .container__photo-Ripal,
+  .container__photo-Prashasti {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .content p {
+    font-size: 9px;
+    line-height: 13px;
+  }
+}
