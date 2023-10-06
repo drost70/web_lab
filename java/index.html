@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Camera Management</title>
+</head>
+
+<body>
+    <header>
+        <div class="left_header">
+            <h2 id="logo_name">My Cameras</h2>
+            <button id="showCameras" onclick="showCameras()">Show Cameras</button>
+            <button id="createCamera" onclick="toggleAside()">Create Camera</button>
+        </div>
+
+        <div class="right_header">
+            <label for="find_input">
+                <input id="find_input" type="text" class="form-control" placeholder="Type..." />
+            </label>
+            <button id="find_button" type="button" onclick="findCamera()">Find</button>
+            <button id="cancel_find_button" type="button" onclick="cancelSearch()">Cancel</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="mainHero">
+            <h2>Manage Cameras</h2>
+            <div id="sort">
+                <p>Sort by the most expensive cameras</p>
+                <button id="sort_button" type="button" onclick="sortByPrice()">SORT</button>
+            </div>
+            <div id="expenses">
+                <p>Count total camera expenses:</p>
+                <button id="count_button" type="button" onclick="calculateTotalPrice(cameraCollection.getCameras())">Count</button>
+                <p id="totalPrice">Total Price: $0.00</p>
+            </div>
+        </div>
+
+        <aside id="cameraAside">
+            <form id="cameraForm">
+                <h2>Add New Camera</h2>
+                <label for="model">Model:</label>
+                <input type="text" id="model">
+
+                <label for="resolution">Resolution:</label>
+                <input type="text" id="resolution">
+
+                <label for="zoom">Zoom:</label>
+                <input type="number" id="zoom">
+
+                <label for="memoryCardType">Memory Card Type:</label>
+                <input type="text" id="memoryCardType">
+
+                <label for="photosCount">Photos Count:</label>
+                <input type="number" id="photosCount">
+
+                <label for="price">Price:</label>
+                <input type="number" id="price">
+
+                <button type="button" id="save-camera-button">Save</button>
+            </form>
+        </aside>
+        <main id="list">
+            <h2>Camera List</h2>
+            <div id="cameraList"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
