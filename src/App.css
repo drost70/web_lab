@@ -1,0 +1,392 @@
+/* Reset some default styles */
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styles */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.nav-item a:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+#logo_name {
+  font-size: 24px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+#logo_name img {
+  width: 100px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Black Line Under Header */
+header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  width: 200px; 
+  height: 20px; 
+  border: 2px solid #4CAF50; 
+  padding: 5px 10px;
+  margin-right: 10px; 
+}
+
+.search button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Additional styles for Navigation */
+.cameras-info {
+  display: flex;
+  align-items: center;
+}
+
+.cameras-info img {
+  width: 500px;
+}
+
+.cameras-description {
+  margin-left: 20px;
+}
+
+.cameras-description h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.cameras-description p {
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.navigation img {
+  width: 500px;
+}
+
+.description {
+  margin-left: 20px;
+}
+
+.description h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.description p {
+  margin: 10px 0;
+  color: #6c6c6c;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+/* Line Between Sections */
+.section-divider {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0;
+}
+
+/* Camera Types Styles */
+.camera-types {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.camera-column{
+  flex-direction: column-reverse;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.camera {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 20px); 
+  margin-bottom: 20px;
+}
+
+.camera img {
+  width: 100px;
+  height: auto;
+}
+
+.camera-description {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.camera-description h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.view-more {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+.view-more-container {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.footer-text {
+  font-size: 16px;
+  flex: 1;
+}
+
+.footer-text span {
+  display: block;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.footer-right img {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Additional Footer Styles */
+.footer-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.copyright {
+  color: #ccc;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-right img:nth-child(4) {
+  margin-right: 0;
+}
+
+.sorting-options {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+.sorting-group {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.sorting-group:last-child {
+  margin-left: 40px; 
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: flex-end;
+}
+
+.product-card {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+  text-align: center;
+  max-width: 100%;
+  border-radius: 10px;
+  height: 350px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.product-card img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.view-more-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  width: 50%;
+  padding: 10px 20px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.sorting-options {
+  padding: 8px 12px; 
+  border: 2px solid #000000; 
+  border-radius: 5px; 
+  background-color: #fff; 
+  color: #000000; 
+  font-size: 14px; 
+}
+
+select {
+  padding: 8px 12px; 
+  border: 2px solid #000000; 
+  border-radius: 5px; 
+  background-color: #fff; 
+  color: #000000; 
+  font-size: 14px; 
+}
+
+select option {
+  background-color: #fff; 
+  color: #000000; 
+  font-size: 14px; 
+}
+
+select option:checked {
+  text-decoration: underline;
+}
