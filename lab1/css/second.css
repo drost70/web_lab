@@ -1,0 +1,110 @@
+.second_class {
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 826px;
+    padding: 0 20px;
+    margin-bottom: 76px; 
+}
+
+.second_title {
+    width: 224.55px;
+    height: 20.099px;
+    flex-shrink: 0;
+    color: #222;
+    font-family: Gilroy;
+    font-size: 16.633px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.second_text1 {
+    width: 97.028px;
+    height: 13.168px;
+    flex-shrink: 0;
+    color: rgba(34, 34, 34, 0.80);
+    font-family: Gilroy;
+    font-size: 11.089px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rotate-text1,
+.rotate-text2 {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    color: #333;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.second_content {
+    display: flex;
+    justify-content: column;
+    flex: 1;
+}
+
+.second_left_text2 {
+    width: 307.17px;
+    height: 58.763px;
+    flex-shrink: 0;
+    color: rgba(115, 115, 141, 0.80);
+    font-family: Gilroy;
+    font-size: 9.703px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.second_heading {
+    width: 224.55px;
+    height: 20.099px;
+    flex-shrink: 0;
+    color: #222;
+    font-family: Gilroy;
+    font-size: 16.633px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.second_right_text {
+    width: 343.063px;
+    height: 88.711px;
+    flex-shrink: 0;
+    color: #73738D;
+    font-family: Gilroy;
+    font-size: 14.554px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 10px;
+    text-align: left;
+}

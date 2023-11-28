@@ -1,0 +1,63 @@
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+@media screen and(max-width:726px) {
+    body {
+        text-align: center;
+    }
+}
+@media screen and(max-width:450px) {
+    :root{
+        font-size: 12px;
+    }
+
+}
+a {
+    text-decoration: none;
+    color: #625c5c;
+}
+
+.header__nav-item {
+    display: block;
+}
+
+li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    border: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 826px;
+    padding: 0 20px;
+}
+
+@media screen and(max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+.default-button {
+    border-radius: 33.96px;
+    background: #FFF;
+    color: rgba(115, 115, 141, 0.60);
+}
+
+.default-button.outlined {
+    background: #1943EF;
+    color: #FFF;
+    border-radius: 33.96px;
+}
