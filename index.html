@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Camera Management</title>
+</head>
+
+<body>
+    <header>
+        <div class="left_header">
+            <h2 id="logo_name">My Cameras</h2>
+            <button id="showCameras">Show Cameras</button>
+            <button type="button" id="createCamera">Create Camera</button>
+        </div>
+
+        <div class="right_header">
+            <label for="find_input">
+                <input id="find_input" type="text" class="form-control" placeholder="Type..." />
+            </label>
+            <button id="find_button" type="button">Find</button>
+            <button id="cancel_find_button" type="button">Cancel</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="mainHero">
+            <h2>Manage Cameras</h2>
+            <div id="sort">
+                <p>Sort by the most expensive cameras</p>
+                <button id="sort_button" type="button">SORT</button>
+            </div>
+            <div id="expenses">
+                <p>Count total camera expenses:</p>
+                <button id="count_button" type="button">Count</button>
+                <p id="totalPrice">Total Price: $0.00</p>
+            </div>
+        </div>
+
+        <aside id="cameraAside">
+            <form id="cameraForm">
+                <h2>Create Camera</h2>
+                <label for="model">Model:</label>
+                <input type="text" id="model">
+
+                <label for="resolution">Resolution:</label>
+                <input type="text" id="resolution">
+                
+                <label for="zoom">Zoom:</label>
+                <input type="number" id="zoom" min="0">
+
+                <label for="memoryCardType">Memory Card Type:</label>
+                <input type="text" id="memoryCardType">
+
+                <label for="photosCount">Photos Count:</label>
+                <input type="number" id="photosCount" min="0">
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" min="0">
+
+                <button type="button" id="save-camera-button">Save</button>
+            </form>
+        </aside>
+
+        <div id="editCameraMenu" class="hidden">
+            <form id="editCameraForm">
+                <h2>Edit Camera</h2>
+                <label for="editModel">Model:</label>
+                <input type="text" id="editModel">
+
+                <label for="editResolution">Resolution:</label>
+                <input type="text" id="editResolution">
+
+                <label for="editZoom">Zoom:</label>
+                <input type="number" id="editZoom" min="0">
+
+                <label for="editMemoryCardType">Memory Card Type:</label>
+                <input type="text" id="editMemoryCardType">
+
+                <label for="editPhotosCount">Photos Count:</label>
+                <input type="number" id="editPhotosCount" min="0">
+
+                <label for="editPrice">Price:</label>
+                <input type="number" id="editPrice" min="0">
+
+                <button type="button" class="saveEdit" onclick="confirmEditCamera()">Save</button>
+                <button type="button" class="cancel" onclick="cancelEditCamera()">Cancel</button>
+            </form>
+        </div>
+
+        <main id="list">
+            <h2>Camera List</h2>
+            <div id="cameraList"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>
